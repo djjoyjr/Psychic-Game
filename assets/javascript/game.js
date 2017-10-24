@@ -7,8 +7,9 @@ var computerGuess = options[Math.floor(Math.random()*options.length)];
 var guessedSoFar = [];
 
 document.onkeyup = function(event) {
-  // Determines which key was pressed.
   userGuess = event.key;
+
+if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) {
 
 if (userGuess == computerGuess) {
  wins++;
@@ -32,7 +33,7 @@ if (turns ==0) {
    guessedSoFar = [];
    computerGuess = options[Math.floor(Math.random()*options.length)];
 }
-
+}
 var html =
   "<h3>Wins: " + wins + "</h3>" +
   "<h3>Losses: " + losses + "</h3>" +
