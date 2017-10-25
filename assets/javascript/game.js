@@ -31,7 +31,7 @@ if (turns ==0) {
    losses++;
    turns= 9;
    guessedSoFar = [];
-   alert("Sorry, you lost.");
+   alert("Sorry, you lost. The correct letter was: " + computerGuess);
    computerGuess = options[Math.floor(Math.random()*options.length)];
 }
 }
