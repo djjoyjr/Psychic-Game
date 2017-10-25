@@ -38,7 +38,7 @@ if (turns ==0) {
 var html =
   "<h3>Wins: " + wins + "</h3>" +
   "<h3>Losses: " + losses + "</h3>" +
-  "<h3>Turns: " + turns + "</h3>" +
+  "<h3>Guesses remaining: " + turns + "</h3>" +
   "<h3>Letters guessed so far: " + guessedSoFar + "</h3>";
 
   document.querySelector("#game").innerHTML = html;
