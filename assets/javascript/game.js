@@ -16,7 +16,7 @@ if (userGuess == computerGuess) {
  turns = 9;
  userGuess = "";
  guessedSoFar = [];
- alert("You Win! the letter was:  " + computerGuess);
+ alert("You Win! the letter was:  " + computerGuess + ". Click OK to play again.");
  computerGuess = options[Math.floor(Math.random()*options.length)];
 }
 else if(userGuess !== computerGuess) {
@@ -31,7 +31,7 @@ if (turns ==0) {
    losses++;
    turns= 9;
    guessedSoFar = [];
-   alert("Sorry, you lost. The correct letter was: " + computerGuess);
+   alert("Sorry, you lost. The correct letter was: " + computerGuess + ". Click OK to play again.");
    computerGuess = options[Math.floor(Math.random()*options.length)];
 }
 }
